@@ -15,7 +15,10 @@ return new class extends Migration
             $table->id();
             $table->double('subject_id');
             $table->double('course_id');
-            $table->double('subject_id');
+            $table->double('time_location_id');
+            $table->double('semester_id');
+            $table->double('academic_year_id');
+            $table->double('instructor_id');
             $table->timestamps();
         });
     }
