@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('enrollments', function (Blueprint $table) {
             $table->id();
-            $table->double('profile_id');
-            $table->double('course_id');
-            $table->double('status_id');
+            $table->unsignedBigInteger('profile_id');
+            $table->unsignedBigInteger('course_id');
+            $table->unsignedBigInteger('status_id');
+            // $table->foreign('profile_id')->references('id')->on('profiles');
+            // $table->foreign('course_id')->references('id')->on('courses');
+            // $table->foreign('status_id')->references('id')->on('enrollment_status');
             $table->timestamps();
         });
     }
