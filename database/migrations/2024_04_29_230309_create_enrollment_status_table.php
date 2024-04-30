@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('enrollment_status', function (Blueprint $table) {
             $table->id();
-            $table->double('status');
+            $table->integer('status');
             $table->timestamps();
         });
     }
