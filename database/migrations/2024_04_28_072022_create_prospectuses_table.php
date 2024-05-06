@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('prospectuses', function (Blueprint $table) {
             $table->id();
+            $table->string('prospectus_id');
+            $table->string('course');
+            $table->string('curriculum_year');
+            $table->string('subject_id');
             $table->timestamps();
         });
     }
