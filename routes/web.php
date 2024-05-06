@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', fn () => view('pages.dashboard'));
+Route::get('/dashboard', fn () => view('dashboard'));
+Route::get('/admission', fn () => view('admission'));
