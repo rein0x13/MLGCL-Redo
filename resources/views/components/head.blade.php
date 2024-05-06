@@ -36,7 +36,7 @@
     </style>
 </head>
 
-<body>
+<body {{$attributes}}>
     {{$slot}}
 </body>
 
